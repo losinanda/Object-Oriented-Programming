@@ -15,21 +15,22 @@ public class Enemy2 extends Enemy
     public void act()
     {
         // Add your action code here.
-        super.enemyMove();
+        enemyMove();
         shootLaserEnemy2();
     }
     
     public Enemy2(){
         super();
     }
+    
     public Enemy2(int speed){
         super(speed);
     }
     
-    private int laserTimer = 0;
-    public void shootLaserEnemy2(){
+    private int laserTimer = 15;
+    protected void shootLaserEnemy2(){
         if(laserTimer == 45){
-            getWorld().addObject(new LaserEnemy(), getX()-30, getY());
+            getWorld().addObject(new LaserEnemy(), getX()-20, getY());
             laserTimer = 0;
         } else{
             laserTimer++;

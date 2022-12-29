@@ -19,12 +19,13 @@ public class Enemy extends Actor
     public Enemy() {
         setRotation(180); 
     }
-    public int speed = 3;
+    private int speed = 3;
     public Enemy (int speed) {
         setRotation(180);
         this.speed = speed;
     }
-    public void enemyMove()
+    
+    protected void enemyMove()
     {
         // Add your action code here.
         move(speed);

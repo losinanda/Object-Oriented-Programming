@@ -18,7 +18,7 @@ public class Laser extends Actor
         move(8);
         laserCollision();
     }
-    public void laserCollision() {
+    private void laserCollision() {
         if (isTouching(Enemy.class)) {
             getWorld().addObject(new Explosion(), getX(), getY());
             removeTouching(Enemy.class);

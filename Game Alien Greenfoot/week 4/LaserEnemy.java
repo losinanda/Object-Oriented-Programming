@@ -22,7 +22,6 @@ public class LaserEnemy extends Actor
     protected void laserEnemyCollision(){
         if(isTouching(Hero.class)){
             getWorld().addObject(new Explosion(), getX(),getY());
-            removeTouching(Enemy.class);
             getWorld().removeObject(this);
         } else if(isAtEdge()){
             getWorld().removeObject(this);

@@ -27,20 +27,20 @@ public class MyWorld extends World
         spawnEnemy2();
     }
     private int timerEnemy = 0;
-    public void spawnEnemy() {
+    private void spawnEnemy() {
         if (timerEnemy == 180) { // if the timer is 3 second
             int speed = Greenfoot.getRandomNumber(4) + 1;
-            addObject(new Enemy(), 599, Greenfoot.getRandomNumber(400));
+            addObject(new Enemy(speed), 599, Greenfoot.getRandomNumber(400));
             timerEnemy = 0;
         }
         else {
             timerEnemy++;
         }
     }
-    public void spawnEnemy2() {
+    private void spawnEnemy2() {
         if (timerEnemy == 180) { // if the timer is 3 second
             int speed = Greenfoot.getRandomNumber(4) + 1;
-            addObject(new Enemy2(), 599, Greenfoot.getRandomNumber(400));
+            addObject(new Enemy2(speed), 599, Greenfoot.getRandomNumber(400));
             timerEnemy = 0;
         }
         else {
