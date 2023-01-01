@@ -20,30 +20,31 @@ public class Main {
 		 * 
 		 * std1.printAllInfo(); student2.printAllInfo(); System.out.println("");
 		 * lecturer2.printAllInfo(); System.out.println(""); staff2.printAllInfo();
+		 * 
+		 * 
+		 * Person prs1 = new Person (); prs1.setName("Adi");
+		 * System.out.println(prs1.getName());
+		 * 
+		 * Student std1 = new Student (); std1.setNim("12345"); std1.printAllInfo();
+		 * System.out.println(std1.getName());
+		 * 
+		 * Person siX = new Student(); siX.get Person SiY = new Person("Caca",
+		 * "Denpasar", false); Student siY = new Person(); siY.get
 		 */
 
-//		Person prs1 = new Person ();
-//		prs1.setName("Adi");
-//		System.out.println(prs1.getName());
-
-//		Student std1 = new Student ();
-//		std1.setNim("12345");
-//		std1.printAllInfo();
-//		System.out.println(std1.getName());
-
-//		Person siX = new Student();
-//		siX.get
-//		Person SiY = new Person("Caca", "Denpasar", false);
-//		Student siY = new Person();
-//		siY.get
-
-		Student x1 = new Student("12345", "Ilkom", "TI", "FTK");
-		Student x2 = new Student("Caca", "Denpasar", false, "12345", "Ilkom", "TI", "FTK");
-//		x2.printAllInfo();
-		Lecturer y1 = new Lecturer("0000", "Ilkom", "TI", "FTK");
+		// Student x1 = new Student("12345", "Ilkom", "TI", "FTK");
+		Student x2 = new Student("Caca", "Denpasar", false, "12345", "00000", "Ilkom");
+		x2.getStudyProgram().getCoordinator().setName("Pak Putu");
+		x2.getStudyProgram().getCoordinator().setNip("99999");
+		x2.getStudyProgram().getCoordinator().setGender(true);
+		x2.getStudyProgram().getCoordinator().setAddress("Singaraja");
+		x2.printAllInfo();
+		System.out.println("\n");
+		// Lecturer y1 = new Lecturer("0000", "Ilkom", "TI", "FTK");
 		Lecturer y2 = new Lecturer("Ari", "Denpasar", false, "00000", "Ilkom", "TI", "FTK");
-//		y2.printAllInfo();
-		Staff z1 = new Staff("99999", "FTK");
+		y2.printAllInfo();
+		System.out.println("\n");
+		// Staff z1 = new Staff("99999", "FTK");
 		Staff z2 = new Staff("Budi", "Denpasar", true, "99999", "FTK");
 		z2.printAllInfo();
 

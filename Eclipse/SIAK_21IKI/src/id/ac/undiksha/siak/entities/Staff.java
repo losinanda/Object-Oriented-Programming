@@ -11,6 +11,7 @@ public class Staff extends Person {
 	}
 
 	public void printAllInfo() {
+		System.out.println("Staff Identity");
 		System.out.println("NIP: " + this.getNip());
 		System.out.println("Name: " + this.getName());
 		System.out.println("Address:" + this.getAddress());
@@ -18,11 +19,11 @@ public class Staff extends Person {
 		System.out.println("Unit: " + this.getUnit());
 	}
 
-	public Staff(String nip, String unit) {
-		super();
-		this.nip = nip;
-		this.unit = unit;
-	}
+//	public Staff(String nip, String unit) {
+//		super();
+//		this.nip = nip;
+//		this.unit = unit;
+//	}
 
 	public Staff(String name, String address, boolean gender, String nip, String unit) {
 		super(name, address, gender);

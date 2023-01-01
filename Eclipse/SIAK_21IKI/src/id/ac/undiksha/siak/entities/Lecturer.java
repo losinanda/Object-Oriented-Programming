@@ -15,22 +15,23 @@ public class Lecturer extends Person {
 	}
 
 	public void printAllInfo() {
+		System.out.println("Lecturer Identity");
 		System.out.println("NIP: " + this.getNip());
 		System.out.println("Name: " + this.getName());
 		System.out.println("Address: " + this.getAddress());
 		System.out.println("Gender: " + (getGender() ? "Male" : "Female"));
-		System.out.println("Study Program: " + this.getStudyProgram());
-		System.out.println("Department: " + this.getDepartment());
-		System.out.println("Faculty: " + this.getFaculty());
+		System.out.println("Study Program: " + this.studyProgram);
+		System.out.println("Department: " + this.department);
+		System.out.println("Faculty: " + this.faculty);
 	}
 
-	public Lecturer(String nip, String studyProgram, String department, String faculty) {
-		super();
-		this.nip = nip;
-		this.studyProgram = studyProgram;
-		this.department = department;
-		this.faculty = faculty;
-	}
+//	public Lecturer(String nip, String studyProgram, String department, String faculty) {
+//		super();
+//		this.nip = nip;
+//		this.studyProgram = studyProgram;
+//		this.department = department;
+//		this.faculty = faculty;
+//	}
 
 	public Lecturer(String name, String address, boolean gender, String nip, String studyProgram, String department,
 			String faculty) {
@@ -73,17 +74,5 @@ public class Lecturer extends Person {
 	public void setFaculty(String faculty) {
 		this.faculty = faculty;
 	}
-
-//	public Lecturer(String nip, String name, String address, boolean gender, String studyProgram, String department,
-//			String faculty) {
-//		super();
-//		this.nip = nip;
-//		this.name = name;
-//		this.address = address;
-//		this.gender = gender;
-//		this.studyProgram = studyProgram;
-//		this.department = department;
-//		this.faculty = faculty;
-//	}
 
 }
